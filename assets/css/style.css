@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: cornflowerblue;
+    color: cornflowerblue;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+}
+
+#video-block {
+    max-width: 26%;
+    display: inline-block;
+    position: absolute;
+    top: 5%;
+    left: 40%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 3px;
+    text-align: center;
+}
+
+#video-block > div {
+    margin-bottom: 20px;
+}
+
+#video-form form {
+    text-align: center;
+    font-size: 20px;
+}
+
+#video-block-header span {
+    font-size: 25px;
+}
+
+#video-form form .input-group {
+    margin-bottom: 20px;
+}
+
+#video-form form .input-group *{
+    display: block;
+    margin: auto;
+}
+
+#video-form form input {
+    padding: 0px 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    height: 25px;
+    width: 100%;
+}
+
+#video-form form button {
+    font-family: 'Open Sans', sans-serif;
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+
+#video-form form button:hover {
+    color: cornflowerblue !important;
+    background: none;
+}
+
+#video-info {
+    display: none;
+    text-align: left;
+}
+
+#video-info label {
+    font-weight: bold;
+}
+
+#video-image {
+    cursor: pointer;
+}
+
+#thumbnail {
+    width: 100%;
+}
+
+#overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    opacity: 0.5;
+    position: absolute;
+    background-color: black;
+}
+
+#video {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    z-index: 999;
+    padding: 30px 20px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+#close-video {
+    display: block;
+    font-weight: bold;
+    text-align: right;
+    position: relative;
+    top: -20px;
+    cursor: pointer;
+}
+
+#status-error{
+    display: none;
+}

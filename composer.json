@@ -1,0 +1,19 @@
+{
+    "name": "murphydownpour/video",
+    "authors": [
+        {
+            "name": "Zaur Akhmedov",
+            "email": "zaur.akhmedov9595@gmail.com"
+        }
+    ],
+    "require": {
+      "ext-curl": "*",
+        "phpunit/phpunit": "^8.2",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    }
+}
