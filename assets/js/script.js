@@ -1,6 +1,6 @@
 let video = null;
 
-$('#request-video-form').submit((e) => {
+$('#request-video-form').submit(function (e) {
     e.preventDefault();
 
     let videoUrl = $('#videourl').val();
@@ -10,7 +10,7 @@ $('#request-video-form').submit((e) => {
         data: {
             url: videoUrl
         },
-        success: (data) => {
+        success: function (data) {
             data = JSON.parse(data);
 
             if (data['status'] == 1) {
@@ -26,13 +26,13 @@ $('#request-video-form').submit((e) => {
     });
 });
 
-$('#thumbnail').click(() => {
+$('#thumbnail').click(function() {
     $('#video').append(video);
     $('#video').show();
     $('#overlay').show();
 });
 
-$('#close-video').click(() => {
+$('#close-video').click(function() {
     $('#video').hide();
     $('#overlay').hide();
     $('#video iframe').remove();
