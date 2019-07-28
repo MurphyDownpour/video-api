@@ -19,6 +19,7 @@ $('#request-video-form').submit((e) => {
                 setData(data['title'], data['author'], data['thumbnail']);
                 $('#video-info').show();
             } else {
+                $('#video-info').hide();
                 $('#status-error').show();
             }
         }
